@@ -1,0 +1,287 @@
+@import fonts
+@import color
+*
+  box-sizing: border-box
+body
+
+  margin: 0
+  width: 100%
+  height: 100%
+  font:
+    family: Tavolga, sans-serif
+
+a
+  text-decoration: none
+  color: $main
+
+header
+
+  display: flex
+  justify-content: space-between
+  align-items: center
+  color: $main
+
+
+.container
+  max-width: 1230px
+  margin: auto
+
+.main-menu
+    list-style: none
+    display: flex
+    &-item
+       padding-right: 10px
+.text
+  text-transform: uppercase
+
+.phone
+  font:
+    size: $phone
+    weight: bold
+
+
+
+section
+  &.main-section
+    background-image: url('../img/main_bg.jpg')
+    padding: 90px 0
+    //max-height: 750px
+
+.lead
+  display: flex
+  align-items: center
+  &-text
+      font:
+        size: 4em
+        weight: bold
+  color: $main
+
+.title
+  font:
+    size: 3em
+    weight: bold
+  color: $main
+  padding: 20px 0
+
+.description
+    font:
+      family: Tahoma,sans-serif
+      size: 0.8em
+    text-align: left
+    line-height: 1.6
+
+.subtitle
+  color: $highlight
+  padding-right: 20px
+
+
+.button
+    display: inline-block
+    background-color: $highlight
+    border-radius: 30px
+    color: $inverse
+    padding: 12px 40px
+    margin-top: 20px
+    font:
+      size: 1rem
+      weight: normal
+
+.section-img
+  width: 50%
+
+.hlight
+  color: $highlight
+.inverse
+  color: $inverse
+
+.lines
+  display: flex
+  align-items: center
+
+.line
+  min-width: 50px
+  height: 2px
+  //border-bottom: 2px solid $highlight
+  border: none
+  //color: $highlight
+  background-color: $highlight
+
+.competition
+  display: flex
+  padding-top: 80px
+  margin-bottom: 80px
+  &-item
+    background-color: $inverse
+    margin-right: 30px
+    text-align: center
+    padding: 20px
+    min-height: 370px
+    box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.16)
+    border: 5px solid $inverse
+    &:hover
+      border: 5px solid $highlight
+      box-shadow: none
+
+.item
+  &-header h2
+    padding: 10px 0
+    color: $main
+    font:
+      size: 1.5em
+      weight: bold
+  &-description
+    font:
+      family: Tahoma,sans-serif
+      size: 0.8em
+    text-align: left
+    line-height: 1.6
+
+.about
+    display: flex
+    padding: 80px 0
+    &-text
+      padding: 0 60px 0 0
+
+section
+  &.section-service
+    background-color: #f7faff
+    padding: 80px 0
+
+.service
+  //background-color: #f7faff
+  &-items
+    display: flex
+    margin-bottom: 80px
+  &-item
+    background-color: $inverse
+    margin-right: 15px
+    padding: 20px
+    &:hover
+      //background: $main url('../img/main_bg.jpg') 0 0 no-repeat
+      background-color: $main
+      color: $inverse
+.item
+  &-img
+    display: inline-block
+    float: left
+    margin-right: 10px
+  &-title
+    margin-bottom: 20px
+    //color: $main
+    line-height: 1.5
+    font:
+      size: 1.3em
+      weight: bold
+    //&:hover
+      color: $inverse
+  &-subtitle
+    margin: 12px 0
+
+.checker
+  margin-bottom: 30px
+
+  & > ul
+    list-style: none
+    display: flex
+    justify-content: flex-end
+    padding: 0
+
+    & > li
+      margin-right: 10px
+      color: $main
+      &:hover
+        color: $highlight
+        cursor: pointer
+.qestion
+  text-align: center
+  padding: 80px 0
+  background: url('../img/qestion_bg.jpg') rgba(255,255,255,0.5)
+  background-blend-mode: color
+
+section
+  &.objection
+    background: $main url(../img/objection-img.jpg) center right no-repeat
+
+.content
+  width: 50%
+  padding: 80px 0
+
+.reasons
+  display: flex
+
+.objection
+    &-items
+      max-width: 420px
+      margin-top: 30px
+      padding-right: 10px
+section
+  &.news
+    padding: 80px 0
+.news
+  &-items
+    display: flex
+  &-item
+    padding: 30px
+
+
+section
+  &.feedback
+    background: url('../img/feedback_bg.jpg') 0 0 no-repeat
+    background-size: cover
+    padding: 80px 0
+.section
+  &-feedback
+    display: flex
+.feedback-content
+  padding-left: 40px
+
+input, textarea
+  width: 300px
+  display: block
+  margin: 15px 0
+  padding: 10px 20px
+  font:
+    size: 13px
+    family: Tahoma, sans-serif
+
+button
+  border: none
+.empty
+  min-width: 50%
+  //min-height: 100px
+  //background-color: lighten(aqua,20%)
+footer
+  background-color: $footer
+  margin-top: 80px
+  padding-top: 40px
+
+.footer
+  &-columns
+    display: flex
+
+.column
+  flex-basis: 25%
+  font:
+    family: Tahoma, sans-serif
+    size: 0.8em
+
+.footer-nav
+
+.copywrite
+  margin-top: 40px
+  background-color: darken($footer, 5%)
+  padding: 10px 0px
+  font:
+    family: Tahoma, sans-serif
+    size: 0.8em
+.left
+  text-align: left
+  float: left
+.right
+   text-align: right
+.mask
+  mask: url('../img/main-img-mask1.svg')
+
+.clip-svg-external
+    -webkit-clip-path: url("http://karenmenezes.com/shapes-polygon/clip.svg#clip-polygon-ext")
+    clip-path: url("http://karenmenezes.com/shapes-polygon/clip.svg#clip-polygon-ext")
