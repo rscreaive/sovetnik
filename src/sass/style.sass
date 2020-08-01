@@ -1,5 +1,12 @@
+//Include .sass files contains styles of page section
+//Подключение стилей секций страницы
+
 @import fonts
 @import color
+@import main
+@import about
+@import service
+
 *
   box-sizing: border-box
 body
@@ -14,8 +21,11 @@ a
   text-decoration: none
   color: $main
 
-header
+.menu a
+  &:hover
+    color: $highlight
 
+header
   display: flex
   justify-content: space-between
   align-items: center
@@ -40,21 +50,6 @@ header
     weight: bold
 
 
-
-section
-  &.main-section
-    background-image: url('../img/main_bg.jpg')
-    padding: 90px 0
-    //max-height: 750px
-
-.lead
-  display: flex
-  align-items: center
-  &-text
-      font:
-        size: 4em
-        weight: bold
-  color: $main
 
 .title
   font:
@@ -86,8 +81,7 @@ section
       size: 1rem
       weight: normal
 
-.section-img
-  width: 50%
+
 
 .hlight
   color: $highlight
@@ -106,92 +100,6 @@ section
   //color: $highlight
   background-color: $highlight
 
-.competition
-  display: flex
-  padding-top: 80px
-  margin-bottom: 80px
-  &-item
-    background-color: $inverse
-    margin-right: 30px
-    text-align: center
-    padding: 20px
-    min-height: 370px
-    box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.16)
-    border: 5px solid $inverse
-    &:hover
-      border: 5px solid $highlight
-      box-shadow: none
-
-.item
-  &-header h2
-    padding: 10px 0
-    color: $main
-    font:
-      size: 1.5em
-      weight: bold
-  &-description
-    font:
-      family: Tahoma,sans-serif
-      size: 0.8em
-    text-align: left
-    line-height: 1.6
-
-.about
-    display: flex
-    padding: 80px 0
-    &-text
-      padding: 0 60px 0 0
-
-section
-  &.section-service
-    background-color: #f7faff
-    padding: 80px 0
-
-.service
-  //background-color: #f7faff
-  &-items
-    display: flex
-    margin-bottom: 80px
-  &-item
-    background-color: $inverse
-    margin-right: 15px
-    padding: 20px
-    &:hover
-      //background: $main url('../img/main_bg.jpg') 0 0 no-repeat
-      background-color: $main
-      color: $inverse
-.item
-  &-img
-    display: inline-block
-    float: left
-    margin-right: 10px
-  &-title
-    margin-bottom: 20px
-    //color: $main
-    line-height: 1.5
-    font:
-      size: 1.3em
-      weight: bold
-    //&:hover
-      color: $inverse
-  &-subtitle
-    margin: 12px 0
-
-.checker
-  margin-bottom: 30px
-
-  & > ul
-    list-style: none
-    display: flex
-    justify-content: flex-end
-    padding: 0
-
-    & > li
-      margin-right: 10px
-      color: $main
-      &:hover
-        color: $highlight
-        cursor: pointer
 .qestion
   text-align: center
   padding: 80px 0
