@@ -312,13 +312,4 @@ footer {
   text-align: right;
 }
 
-.mask {
-  mask: url("../img/main-img-mask1.svg");
-}
-
-.clip-svg-external {
-  -webkit-clip-path: url("http://karenmenezes.com/shapes-polygon/clip.svg#clip-polygon-ext");
-  clip-path: url("http://karenmenezes.com/shapes-polygon/clip.svg#clip-polygon-ext");
-}
-
 /*# sourceMappingURL=style.css.map */
