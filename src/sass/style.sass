@@ -21,6 +21,24 @@ a
   text-decoration: none
   color: $main
 
+
+.logo
+  padding: 10px
+
+.svg-logo
+    height: 95px
+    max-width: 295px
+    &.header
+      --color1: #B58E57
+      --color2: #473D3A
+      --color3: #8F7249
+    &.inverse
+      --color1: white
+      --color2: white
+      --color3: white
+
+//.inverse #_logo path
+    fill: white
 .menu a
   &:hover
     color: $highlight
@@ -80,6 +98,12 @@ header
     font:
       size: 1rem
       weight: normal
+    &:active
+      position: relative
+      top: 1px
+      box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.16)
+    &:hover
+      background: linear-gradient(to bottom, #e31d32 5%, #ab0911 95%)
 
 
 
@@ -109,6 +133,7 @@ header
 section
   &.objection
     background: $main url(../img/objection-img.jpg) center right no-repeat
+    background-size: 45%
 
 .content
   width: 50%
