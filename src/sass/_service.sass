@@ -7,16 +7,25 @@ section
 .service
   //background-color: #f7faff
   &-items
-    display: flex
+    display: none
     margin-bottom: 80px
   &-item
     background-color: $inverse
     margin-right: 15px
     padding: 20px
     &:hover
-      //background: $main url('../img/main_bg.jpg') 0 0 no-repeat
-      background-color: $main
+      background: url('../img/service-item_bg.jpg') 0 0 no-repeat rgba(36,38,86, 0.85)
+      //background-color
+      background-blend-mode: darken
+      background-size: cover
       color: $inverse
+
+//#legal
+//  display: none
+
+.active
+  display: flex
+
 .item
   &-img
     display: inline-block
@@ -36,6 +45,11 @@ section
 
 .checker
   margin-bottom: 30px
+  & li > input
+    display: none
+
+    &:checked + label
+      color: $highlight
 
   & > ul
     list-style: none
@@ -49,3 +63,6 @@ section
       &:hover
         color: $highlight
         cursor: pointer
+    & > input
+          display: none
+

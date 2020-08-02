@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Tavolga";
   src: url("../fonts/Tavolga-Free.eot");
@@ -73,7 +74,7 @@ section.section-service {
 }
 
 .service-items {
-  display: flex;
+  display: none;
   margin-bottom: 80px;
 }
 .service-item {
@@ -82,8 +83,14 @@ section.section-service {
   padding: 20px;
 }
 .service-item:hover {
-  background-color: #242656;
+  background: url("../img/service-item_bg.jpg") 0 0 no-repeat rgba(36, 38, 86, 0.85);
+  background-blend-mode: darken;
+  background-size: cover;
   color: #fff;
+}
+
+.active {
+  display: flex;
 }
 
 .item-img {
@@ -104,6 +111,12 @@ section.section-service {
 .checker {
   margin-bottom: 30px;
 }
+.checker li > input {
+  display: none;
+}
+.checker li > input:checked + label {
+  color: #ff2234;
+}
 .checker > ul {
   list-style: none;
   display: flex;
@@ -117,6 +130,9 @@ section.section-service {
 .checker > ul > li:hover {
   color: #ff2234;
   cursor: pointer;
+}
+.checker > ul > input {
+  display: none;
 }
 
 * {
@@ -318,5 +334,7 @@ footer {
 .right {
   text-align: right;
 }
+
+/* Функциональность: */
 
 /*# sourceMappingURL=style.css.map */
